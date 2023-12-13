@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Gelasio";
+  src: url("../../fonts/Gelasio/Gelasio-Regular.ttf"), format(trutype);
+}
+@font-face {
+  font-family: "Ribeye";
+  src: url("../../fonts/Ribeye/Ribeye-Regular.ttf"), format(trutype);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf"), format(trutype);
+}
+
+.blogs {
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.blogs__title {
+  font-family: "Gelasio";
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.blogs__subtitle {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  max-width: 580px;
+  opacity: 0.6;
+}
+
+.blogs__cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 1100px;
+  gap: 10px;
+}
+
+.blogs__card1 {
+  max-width: 555px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-row: 1/4;
+  gap: 20px;
+}
+
+.blogs__card1 img {
+  width: 100%;
+}
+.blogs__card2 {
+  max-width: 555px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blogs__card2 img {
+  max-width: 263px;
+  width: 100%;
+}
+
+.blogs__card-text {
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .blogs__cards {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 447px) {
+  .blogs__cards {
+    gap: 20px;
+  }
+  .blogs__card2 {
+    flex-direction: column;
+  }
+}

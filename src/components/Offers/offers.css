@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gelasio";
+  src: url("../../fonts/Gelasio/Gelasio-Regular.ttf"), format(trutype);
+}
+@font-face {
+  font-family: "Ribeye";
+  src: url("../../fonts/Ribeye/Ribeye-Regular.ttf"), format(trutype);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf"), format(trutype);
+}
+
+.offers {
+  padding: 140px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.location {
+  color: red;
+}
+
+.star {
+  color: yellow;
+  font-size: 22px;
+}
+
+.offers__card p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.offers__card {
+  max-width: 262px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.offers__card-img {
+  max-width: 262px;
+}
+
+.offers__card-img img {
+  width: 100%;
+}
+
+.offers__cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.offers__title {
+  font-family: "Gelasio";
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.offers__subtitle {
+  font-family: 'Roboto';
+  max-width: 650px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.offers__card1 {
+    opacity: 0.5;
+}

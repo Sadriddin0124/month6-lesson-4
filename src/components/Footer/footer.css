@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Gelasio";
+  src: url("../../fonts/Gelasio/Gelasio-Regular.ttf"), format(trutype);
+}
+@font-face {
+  font-family: "Ribeye";
+  src: url("../../fonts/Ribeye/Ribeye-Regular.ttf"), format(trutype);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf"), format(trutype);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background: #2694990A;
+
+}
+
+.footer__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__input {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.footer__title {
+    font-family: 'Ribeye';
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+}
